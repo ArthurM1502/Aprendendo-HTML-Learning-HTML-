@@ -1,0 +1,152 @@
+<!- estrutura basica do html ->
+<taga><!- #taga é uma tag de abertura ->
+<taga><!- #taga é uma tag de fechamento ->
+<!- tag (estrutura inportante do html) com estrutura "<nomeAleatorio>" sem corpo ->
+<!- tag (estrutura inportante do html) com estrutura "<nomeAleatorio></nomeAleatorio>" com corpo ->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Meu HTML</title>
+  </head>
+  <body></body>
+</html>
+
+<!DOCTYPE html><!- #se trata do tipo de documento->
+<html></html><!- #se trata da estrutura do html ->
+<head></head><!- #se trata dos meta dados do html ->
+<body></body><!- #se trata do conteudo do html ->
+<title></title><!- #se trata do titulo da pagina ->
+<meta charset="utf-8" /><!- #se trata da codificação do html ->
+
+<!- comando para criar estrutura direta ! or html:5 ->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html
+
+<!- <h1> #se trata de um titulo de primeira ordem ->
+<!- <h2> #se trata de um titulo de segunda ordem ->
+<!- <h3> #se trata de um titulo de terceira ordem ->
+<!- <h4> #se trata de um titulo de quarta ordem ->
+<!- <h5> #se trata de um titulo de quinta ordem ->
+<!- <h6> #se trata de um titulo de sexta ordem ->
+<!-quantos mais h's tiver mais pequeno o titulo sera ->
+<!- <p> #se trata de um paragrafo ->
+<!- <br> #se trata de uma quebra de linha ->
+
+<!- existem atributos que podem ser adicionados a tagas como: ->
+<!- <taga atributo="valor">conteudo</taga> ->
+<!- <taga atributo="valor" atributo="valor">conteudo</taga> ->
+<!- <o id> #se trata de um identificador unico para a tag ->
+<!- duas tag nao podem ter o mesmo id ->
+<!- <a class> #se trata de uma classe para a taga ->
+<!- duas tag podem ter a mesma classe ->
+<!- duas tags podem ter mais de uma classe ->
+<!- <style></style> #se trata de um estilo para a tag (tem corpo) ->
+
+<!- #ao falarmos de <style></style> estamos falando de css ->
+<!- #ao falarmos de <script></script> estamos falando de javascript ->
+
+<!- exemplo de uso de tagas com atributos e <style></style> ->
+<!- caso for usar o id dentro do <style></style> usar # e o nome do id ->
+<!- caso for usar a classe dentro do <style></style> usar . e o nome da classe ->
+<!- style pode ser usado em uma tag exemplo: <h1 style="background: red"> ->
+<!- caso for usar mais de um estilo em uma tag usar ; para separar ->
+<!- caso for deixar a letra em negrito usar <b></b> ou <strong></strong> ->
+<!- porêm o <strong></strong> é usado de forma semantica ->
+<!- caso for deixar a letra em italico usar <i></i> ou <em></em> ->
+<!- porêm o <em></em> é usado para dar ênfase ->
+<!- caso for deixar a letra em sublinhado usar <u></u> ->
+
+<!- em caso de ocorrer uma dispulta entre o id e a classe o id sempre ganha ->
+<!- em caso de ocorrer uma disputa entre a classe e a tag a classe sempre ganha -> 
+<!- a nao ser que seja usado o !important no css ->
+<!- o !important é usado para forçar a tag a usar o estilo que foi passado(não é recomendado) ->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      background: red;
+    }
+    #exemplo {
+      color: white;
+    }
+    .fundo-vermelho {
+      background: purple;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="exemplo" class="fundo-vermelho" >
+    Meu Projeto
+  </h1>
+  <p>um texto<b>qualquer</b></p>
+  <h2 id="exemplo2" class="fundo-vermelho fonte-pequena" >
+    Meu Projeto parte 2
+  </h2>
+  <p>um texto<i>qulquer</i></p>
+</body>
+</html>
+
+<!- <a href="url">texto</a> #se trata de um link ->
+<!- <a href="url" target="_blank">texto</a> #se trata de um link que abre em outra aba ->
+<!- <a href="url" target="_self">texto</a> #se trata de um link que abre na mesma aba ->
+<!- <a href="url" target="_parent">texto</a> #se trata de um link que abre na aba pai ->
+<!- <a href="url" target="_top">texto</a> #se trata de um link que abre na aba principal ->
+<!- <img src="url" alt="texto"> #se trata de uma imagem ->
+<!- <img src="url" alt="texto" width="100" height="100"> #se trata de uma imagem com tamanho definido ->
+<!- sendo que o width é a largura e o height é a altura ->
+<!- tambem posso selecionar a altura e a largura em % ->
+<!- ou usando <style></style> e class ou id ->
+<!- <img src="url" alt="texto" width="100" height="100" style="border-radius: 50%"> #se trata de uma imagem com tamanho definido e com borda arredondada ->
+<!- <img src="url" alt="texto" width="100" height="100" style="border-radius: 50%; border: 2px solid red"> #se trata de uma imagem com tamanho definido e com borda arredondada e com borda de 2px e vermelha ->
+
+<!- <del>texto</del> ou <s></s> #se trata de um texto riscado, dando a ideia de excluido ->
+<!- <ins>texto</ins> ou <u></u> #se trata de um texto sublinhado, dando a ideia de adicionado ->
+<!- <mark>texto</mark> #se trata de um texto marcado, dando a ideia de destaque ->
+<!- <small>texto</small> #se trata de um texto pequeno ->
+<!- <strong>texto</strong> #se trata de um texto em negrito, dando a ideia de fala dinamica ->
+<!- <em>texto</em> #se trata de um texto em italico, dando a ideia de enfase ->
+<!-sup>texto</sup> #se trata de um texto em cima, dando a ideia de expoente ->
+<!-sub>texto</sub> #se trata de um texto em baixo, dando a ideia de indice ->
+<!- <q>texto</q> #se trata de um texto em aspas como citacão ->
+<!- <q cite="url">texto</q> #se trata de um texto em aspas como citacão com link ->
+<!- <cite>texto</cite> #se trata de um texto em italico como citacão ->
+<!- <code>texto</code> #se trata de um texto em italico como codigo ->
+<!- <pre>texto</pre> #se trata de um texto em bloco como codigo ->
+<!- <blockquote>texto</blockquote> #se trata de um texto em bloco como citacão, fora do paragrafo ->
+<!- <abbr title="texto">texto</abbr> #se trata de um texto abreviado ->
+<!- <dfn>texto</dfn> #se trata de um texto definido ->
+<!- <address>texto</address> #se trata de um texto de endereço ->
+<!- <time datetime="2021-08-01">texto</time> #se trata de um texto de data ->
+<!- <time datetime="2021-08-01" pubdate>texto</time> #se trata de um texto de data com data de publicação ->
+
+<!- <span>texto</span> #se trata de um texto generico ->
+<!- <div>texto</div> #se trata de um texto generico em bloco ->
+
+<!- <nav>texto</nav> #se trata de um texto de navegação ->
+<!- <header>texto</header> #se trata de um texto de cabeçalho ->
+<!- <footer>texto</footer> #se trata de um texto de rodapé ->
+<!- <main>texto</main> #se trata de um texto principal ->
+<!- <section>texto</section> #se trata de um texto de seção ->
+<!- <article>texto</article> #se trata de um texto de artigo ->
+<!- <aside>texto</aside> #se trata de um texto de lado ->
+<!- <figure>texto</figure> #se trata de um texto de figura ->
+<!- <figcaption>texto</figcaption> #se trata de um texto de legenda ->
+
+<-! <ul></ul> #se trata de uma lista não ordenada ->
+<-! <ol></ol> #se trata de uma lista ordenada ->
