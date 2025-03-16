@@ -1,6 +1,6 @@
 <!- estrutura basica do html ->
-<taga><!- #taga é uma tag de abertura ->
-<taga><!- #taga é uma tag de fechamento ->
+<tag><!- #tag é uma tag de abertura ->
+</tag><!- #tag é uma tag de fechamento ->
 <!- tag (estrutura inportante do html) com estrutura "<nomeAleatorio>" sem corpo ->
 <!- tag (estrutura inportante do html) com estrutura "<nomeAleatorio></nomeAleatorio>" com corpo ->
 
@@ -150,3 +150,157 @@
 
 <-! <ul></ul> #se trata de uma lista não ordenada ->
 <-! <ol></ol> #se trata de uma lista ordenada ->
+---------------------------------------------------------------------------------------------------------------------------------------
+<!-- In english -->
+<!- basic structure of html ->
+<tag><!- #tag is an opening tag ->
+</tag><!- #tag is a closing tag ->
+<!- tag (important html structure) with structure "<nomeAleatorio>" without body ->
+<!- tag (important html structure) with structure "<nomeAleatorio></nomeAleatorio>" with body ->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>My HTML</title>
+  </head>
+  <body></body>
+</html>
+
+<!DOCTYPE html><!- #it is the document type ->
+<html></html><!- #it is the html structure ->
+<head></head><!- #it is the html metadata ->
+<body></body><!- #it is the html content ->
+<title></title><!- #it is the page title ->
+<meta charset="utf-8" /><!- #it is the html encoding ->
+
+<!- command to create direct structure ! or html:5 ->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html
+
+<!- <h1> #it is a first-level heading ->
+<!- <h2> #it is a second-level heading ->
+<!- <h3> #it is a third-level heading ->
+<!- <h4> #it is a fourth-level heading ->
+<!- <h5> #it is a fifth-level heading ->
+<!- <h6> #it is a sixth-level heading ->
+<!- the more h's there are, the smaller the title will be ->
+<!- <p> #it is a paragraph ->
+<!- <br> #it is a line break ->
+
+<!- there are attributes that can be added to tags such as: ->
+<!- <taga attribute="value">content</taga> ->
+<!- <taga attribute="value" attribute="value">content</taga> ->
+<!- <o id> #it is a unique identifier for the tag ->
+<!- two tags cannot have the same id ->
+<!- <a class> #it is a class for the tag ->
+<!- two tags can have the same class ->
+<!- two tags can have more than one class ->
+<!- <style></style> #it is a style for the tag (has body) ->
+
+<!- #when we talk about <style></style> we're talking about css ->
+<!- #when we talk about <script></script> we're talking about javascript ->
+
+<!- example of using tags with attributes and <style></style> ->
+<!- if using the id within <style></style>, use # and the id name ->
+<!- if using the class within <style></style>, use . and the class name ->
+<!- style can be used in a tag example: <h1 style="background: red"> ->
+<!- if using more than one style in a tag, use ; to separate ->
+<!- to make the text bold, use <b></b> or <strong></strong> ->
+<!- however, <strong></strong> is used semantically ->
+<!- to make text italic, use <i></i> or <em></em> ->
+<!- however, <em></em> is used to add emphasis ->
+<!- to underline text, use <u></u> ->
+
+<!- if there is a conflict between id and class, the id always wins ->
+<!- if there is a conflict between the class and the tag, the class always wins -> 
+<!- unless !important is used in css ->
+<!- !important is used to force the tag to use the provided style (not recommended) ->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      background: red;
+    }
+    #example {
+      color: white;
+    }
+    .red-background {
+      background: purple;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="example" class="red-background" >
+    My Project
+  </h1>
+  <p>a <b>random</b> text</p>
+  <h2 id="example2" class="red-background small-font" >
+    My Project part 2
+  </h2>
+  <p>a <i>random</i> text</p>
+</body>
+</html>
+
+<!- <a href="url">text</a> #it is a link ->
+<!- <a href="url" target="_blank">text</a> #it is a link that opens in another tab ->
+<!- <a href="url" target="_self">text</a> #it is a link that opens in the same tab ->
+<!- <a href="url" target="_parent">text</a> #it is a link that opens in the parent tab ->
+<!- <a href="url" target="_top">text</a> #it is a link that opens in the top-level tab ->
+<!- <img src="url" alt="text"> #it is an image ->
+<!- <img src="url" alt="text" width="100" height="100"> #it is an image with defined dimensions ->
+<!- width is the width, and height is the height ->
+<!- you can also set height and width in % ->
+<!- or by using <style></style> and class or id ->
+<!- <img src="url" alt="text" width="100" height="100" style="border-radius: 50%"> #it is a round-cornered image with defined dimensions ->
+<!- <img src="url" alt="text" width="100" height="100" style="border-radius: 50%; border: 2px solid red"> #it is a round-cornered image with a 2px red border and defined dimensions ->
+
+<!- <del>text</del> or <s></s> #it is strikethrough text, suggesting it is deleted ->
+<!- <ins>text</ins> or <u></u> #it is underlined text, suggesting it is added ->
+<!- <mark>text</mark> #it is highlighted text, indicating emphasis ->
+<!- <small>text</small> #it is small text ->
+<!- <strong>text</strong> #it is bold text, suggesting dynamic speech ->
+<!- <em>text</em> #it is italicized text, indicating emphasis ->
+<!-sup>text</sup> #it is superscript, indicating exponent ->
+<!-sub>text</sub> #it is subscript, indicating index ->
+<!- <q>text</q> #it is a quoted text ->
+<!- <q cite="url">text</q> #it is a quoted text with a link ->
+<!- <cite>text</cite> #it is italicized text as citation ->
+<!- <code>text</code> #it is italicized text as code ->
+<!- <pre>text</pre> #it is block text as code ->
+<!- <blockquote>text</blockquote> #it is block text as a citation, outside the paragraph ->
+<!- <abbr title="text">text</abbr> #it is an abbreviation ->
+<!- <dfn>text</dfn> #it is a defined term ->
+<!- <address>text</address> #it is address text ->
+<!- <time datetime="2021-08-01">text</time> #it is date text ->
+<!- <time datetime="2021-08-01" pubdate>text</time> #it is date text with publication date ->
+
+<!- <span>text</span> #it is generic inline text ->
+<!- <div>text</div> #it is generic block text ->
+
+<!- <nav>text</nav> #it is navigation text ->
+<!- <header>text</header> #it is header text ->
+<!- <footer>text</footer> #it is footer text ->
+<!- <main>text</main> #it is main text ->
+<!- <section>text</section> #it is section text ->
+<!- <article>text</article> #it is article text ->
+<!- <aside>text</aside> #it is sidebar text ->
+<!- <figure>text</figure> #it is figure text ->
+<!- <figcaption>text</figcaption> #it is caption text ->
+
+<!- <ul></ul> #it is an unordered list ->
+<!- <ol></ol> #it is an ordered list ->
